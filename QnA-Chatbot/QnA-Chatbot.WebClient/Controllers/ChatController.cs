@@ -35,8 +35,7 @@ namespace QnA_Chatbot.WebClient.Controllers
             QnAQuery result = Ask(query.Question);
             return View(result);
         }
-
-        [HttpGet]
+        
         private QnAQuery Ask(string question)
         {
             QnAQuery query = new QnAQuery();
