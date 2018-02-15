@@ -15,5 +15,5 @@ REST api client for the dummiest QnA chatbot using a basic knowledge base. Uses 
 ```
 4. Run and enjoy
 
-
-
+# Try it!
+Chat with the dummiest bot in the world here: http://nst-chatbot.azurewebsites.net/
