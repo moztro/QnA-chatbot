@@ -1,0 +1,30 @@
+﻿@model QnA_Chatbot.WebClient.Models.QnAQuery
+
+@{
+    ViewBag.Title = "Welcome and meet the dummiest Chatbot in the world";
+}
+
+<h1>@ViewBag.Title</h1>
+<hr />
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Question, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Question, new { @class = "form-control" })
+                <br />
+                <input type="submit" class="btn btn-lg btn-success" value="Ask" />
+            </div>
+        </div>
+    }
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Answer, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(m => m.Answer, new { @class = "form-control" })
+            </div>
+        </div>
+</div>
